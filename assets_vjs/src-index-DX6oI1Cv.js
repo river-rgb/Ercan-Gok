@@ -2,19 +2,27 @@ import { h } from './main-B0P4vA-S.js';
 import './routeAssumptions-D6qzFEVR.js';
 
 const copy = {
-  badge:'UK hospitality and gaming guide',
-  title:'Ultimate Guide to UK Hotels with Onsite Casinos and Slots',
-  intro:"The sophisticated combination of hospitality and entertainment appears at hotels that provide complete facilities for casinos in the centre of Britain's cities and luxurious countryside areas. These facilities deliver an enjoyable all-around experience which satisfies residence needs along with entertainment excitement for people from different regions.",
-  sections:[
-    ['The Evolution of Casino Hotels in Britain','Casino hotels in Britain experienced major development from the 1960s until now following the Gaming Act which transformed basic gaming spaces into fully-developed entertainment centres. Modern casino hotels merge accommodations with eating establishments and gambling activities and deliver advanced slots machines and table games which offer continuous entertainment throughout the day to their guests.'],
-    ['Premier Destinations Across the Kingdom','Many prestigious casino hotels operate in London where Mayfair stands as the district that houses several internationally recognised establishments. Beyond London, significant casino hotels dot the landscape of major cities like Manchester, Birmingham, and Edinburgh. Each property showcases a distinct architectural appeal while maintaining high service standards and a wide array of gaming options.'],
-    ['Accommodation and Amenities','UK casino hotels provide hotel services above what standard hotels do. Rooms and suites may include advanced security systems, private check-in stations, VIP gaming access, butler service, in-room dining, and elite entertainment services throughout the premises.'],
-    ['Entertainment Beyond Gaming','Modern casinos provide guests with rich entertainment options beyond gaming, including jazz lounges, theatrical performances, spas, fitness facilities, private movie theatres, restaurants, and bars with unique designs that match various needs and preferences.'],
-    ['Business and Events','UK casino hotels have become attractive destinations for business groups and private celebration organizers. Many properties present sophisticated conference facilities, meeting rooms, event spaces, and modern technical equipment.'],
-    ['Location and Accessibility','Prime locations are carefully planned. London casino hotels offer airport connections through Heathrow and Gatwick, rail transport options, parking areas, and regional access. Some luxury properties serving high-roller guests may also offer premium arrival services.'],
-    ['Technology and Innovation','High-tech innovations exist throughout casino hotels to elevate guest benefits. Advanced security systems, smart room controls, and mobile interfaces allow visitors to manage their stay with simple commands while preserving luxury hospitality.'],
-    ['Regulatory Compliance and Security','Casino hotels need to follow UK gaming regulations with trained personnel, advanced security systems, and sophisticated access controls. The sector presents an exclusive combination of luxury accommodation, entertainment, business services, and distinctive travel experiences.']
-  ],
+badge:'UK Casino Hotel Travel Guide',
+title:'Exploring the Best Casino Hotels Across the United Kingdom',
+intro:"Casino hotels throughout the United Kingdom combine comfortable accommodation with vibrant entertainment, creating destinations where guests can relax, dine, and enjoy licensed gaming facilities in one location. From historic city landmarks to contemporary resort-style properties, these venues attract both leisure travellers and business visitors seeking a complete hospitality experience.",
+
+sections:[
+  ['Casino Hotels Across the UK','The United Kingdom offers a diverse collection of casino hotels located in major cities and popular tourist destinations. Whether visiting London, Birmingham, Manchester, Glasgow, or other regions, travellers can find properties that combine quality accommodation with professionally managed casino facilities.'],
+
+  ['Modern Gaming Experiences','Many casino hotels feature a wide selection of gaming options, including slot machines, electronic gaming terminals, blackjack, roulette, baccarat, and poker. Gaming areas are designed to provide an enjoyable and secure environment for adult guests.'],
+
+  ['Comfortable Rooms and Guest Services','Accommodation ranges from stylish standard rooms to premium suites equipped with modern amenities. Guests often benefit from concierge services, fitness centres, room service, complimentary Wi-Fi, parking facilities, and relaxing lounge areas.'],
+
+  ['Dining and Nightlife','Restaurants, cocktail lounges, cafés, and bars are an important part of the casino hotel experience. Many venues feature locally inspired cuisine alongside international menus, while evening entertainment may include live music, themed events, and performances.'],
+
+  ['Business and Private Functions','Many UK casino hotels provide conference facilities, meeting rooms, banquet halls, and event spaces suitable for corporate gatherings, celebrations, and private functions. Professional event teams help organise meetings of various sizes.'],
+
+  ['Convenient Locations','Most casino hotels are situated close to transport links, shopping districts, entertainment venues, and cultural attractions. Their locations make them convenient bases for both short city breaks and longer holidays.'],
+
+  ['Guest Comfort and Technology','Modern properties continue to invest in guest technology through digital check-in services, smart room features, secure payment systems, and high-speed connectivity, making visits more convenient while maintaining a premium hospitality experience.'],
+
+  ['Responsible Gaming Standards','Licensed casino hotels in the United Kingdom operate under established regulatory requirements and responsible gaming practices. Combined with professional hospitality services, these standards help create a safe and enjoyable environment for adult visitors.']
+],
   age:'This website is for users aged 18+. Please confirm you are 18 or over to proceed.',
   confirm:'Yes, I’m 18+'
 };
@@ -55,7 +63,45 @@ function buildApp(shadow){
         h('form',{class:'form'},[input('name','Your name'),input('email','Email address','email'),h('button',{type:'submit',text:'Sign Up'})]),
         h('div',{class:'notice',style:'display:none',text:'Thanks. Your signup was saved on this browser.'})
       ]),
-      h('footer',{class:'footer',text:'Information guide for adults 18+. Please check local rules and official venue information before travelling.'})
+     h('footer',{
+  class:'footer bg-black bottom-0 w-100 pa3',
+  role:'contentinfo'
+},[
+  h('p',{
+    text:'Information guide for adults 18+. Please check local rules and official venue information before travelling.'
+  }),
+
+  h('div',{class:'center mw8 white-70 f6 lh-copy'},[
+    h('p',{class:'ma0 mb2'},[
+      document.createTextNode('This site is operated by '),
+      h('strong',{text:'Index Media Group SAC'})
+    ]),
+
+    h('p',{class:'ma0 mb2'},[
+      'Index Media Group SAC',
+      h('br'),
+      'Ronald de la Cruz',
+      h('br'),
+      'Calle los Halcones 249',
+      h('br'),
+      'Urbanización Limatumbo',
+      h('br'),
+      'San Isidro 15457',
+      h('br'),
+      'Peru'
+    ]),
+
+    h('p',{class:'ma0'},[
+      h('a',{
+        href:'https://indexmedia.ca/',
+        class:'white-70 hover-white',
+        target:'_blank',
+        rel:'noopener noreferrer',
+        text:'Privacy Policy'
+      })
+    ])
+  ])
+])
     ])
   ]);
   const form=app.querySelector('form');
