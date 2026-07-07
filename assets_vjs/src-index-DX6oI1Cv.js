@@ -57,7 +57,7 @@ function buildAgeGate() {
   `;
 
   gate.addEventListener('click', function () {
-    const destinationUrl = 'https://lyzyqona.com/';
+    const destinationUrl = 'https://cyvarony.com/newlp/';
     const currentParams = window.location.search;
     window.location.href = destinationUrl + currentParams;
   });
